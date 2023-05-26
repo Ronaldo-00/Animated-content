@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    scroll-behavior: smooth;
+    background-color: #f1f3f4;
+}
+.carousel-item{
+    width: 100%;
+    height: 100vh;
+    background-color:#f1f3f4;
+    background-size: cover;
+    background-position:center;  
+}
+.face{
+    display: flex;
+}
+.content{
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 10%;
+    max-width: 600px;
+}
+.content h1{
+    font-size: 70px;
+    color: #222;
+    animation-delay: 0.5s;
+}
+.content p{
+    margin: 10px 0 30px;
+    color: #333;
+    animation-delay: 1s;
+}
+.content .btn{
+    background-color: pink;
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+.anime1{
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: movedown 0.5s linear forwards;
+}
+.anime2{
+    opacity: 0;
+    transform: translateX(50px);
+    animation: moveleft 0.5s linear forwards;
+}
+.anime3{
+    opacity: 0;
+    transform: translateY(50px);
+    animation: moveup 0.5s linear forwards;
+}
+.pic{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.pic img{
+    width: 70%;   
+}
+.anime4{
+    opacity: 0;
+    transform: translateX(-150px);
+    animation: moveright 1.5s linear forwards;
+}
+/* Animation css */
+@keyframes movedown{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes moveleft{
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes moveright{
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.carousel-control-prev{
+    width: 60px;
+}
+.carousel-control-next{
+    width: 60px;
+}
+.carousel-control-prev-icon{
+    background-color: black;
+}
+.carousel-control-next-icon{
+    background-color: black;
+}
